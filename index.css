@@ -1,0 +1,17 @@
+main{
+	width:100%;
+	text-align:center;
+}
+
+main form{
+	background-color:white;
+	margin:0 20%;
+	padding:0 30px;
+	width:50%;
+	border: 2px solid black;
+}
+
+.change{
+	font-family:Comic Sans;
+	color:red;
+}
