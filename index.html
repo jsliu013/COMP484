@@ -1,133 +1,160 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width">
-		<link rel="stylesheet" href="common.css">
-		<link rel="stylesheet" href="index.css">
-		<title>Sign Up</title>
-	</head>
-	<body>
-		<header>
-			<div>
-				<figure>
-					<img src=image.jpeg	>
-					<figcaption>
-						<p>Liu & Nemo Co. </p>
-						<p>Joshua Liu, CEO </p>
-						<p>random@random.com </p>
-					</figcaption>
-				</figure>
-				<form action="https://google.com/search" method="get" id="searchBar">
-					<fieldset>
-						<input type="string" name="q" value="" id="searchString" placeholder="Search your stuff here">
-						<input type="submit" value="Submit" id="submit">
-						<div id="searchType"><input type="radio" name="searchType" value="web" checked> Search the Web
-											 <input type="radio" name="searchType" value="internal"> Search within the website</div>
-					</fieldset>				
-				</form>
-			</div>
-			<h2>Welcome to the shittiest website in the world!</h2>
-			
-			<nav>Links
-				<ul> 
-					<li class="active nohover">Sign Up</li>
-					<li><a href=page1.html>Privacy Agreement</a></li>
-					<li><a href=page2.html >About You</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<!--
-		Here Begins Main
-		-->
-		<main>
-			<article>
-				<h3> Sign up today to receive updates</h3>
-				<form action="#" method="post" id="mainform">
-					Name:<input type="string" 				placeholder="First Name" 			id="firstName"		name="firstName"	autocomplete="on">
-					<input type="string" 					placeholder="Last Name" 			id="lastName"		name="lastName" 	autocomplete="on"><br>
-					Email:<input type="email" 				placeholder="name@domain.com" 		id="email"			name="email"><br>
-					Password:<input type="password" 		placeholder="Password" 				id="pwd"			name="pswd1"><br>
-					<input type="password" 					placeholder="Re-Enter Password" 	id="pwd2"			name="pswdVerify"><br>
-					Birthday:<input type="date" 			value="1998-01-01"					id="bday" 			name="bday"><br>
-					<input list="majors" 					placeholder="Major">
-						<datalist id="majors">
-							<option value="Civil Engineering">
-							<option value="Computer Engineering">
-							<option value="Computer Information Technology">
-							<option value="Computer Science">
-							<option value="Electrical Engineering">
-							<option value="Engineering Management">
-							<option value="Manufacturing Systems Engineering">
-							<option value="Mechanical Engineering">
-						</datalist><br>
-					Your <span class="change">favorite color</span>: <input type="color" 														id="favColor"><br>
-					Years in Tertiary Education:
-						<select name="years">
-							<option value="1"> 1 Year</option>
-							<option value="2"> 2 Years</option>
-							<option value="3"> 3 Years</option>
-							<option value="4"> 4 Years</option>
-							<option value="5"> 5+ Years</option>
-						</select><br>
-					Phone Number:<input type="tel"  		placeholder="###-###-####" 			id="usrtel"			name="usrtel"><br>
-					Personal Website:<input type="url" 		placeholder="www.webname.com"		id="website"		name="website"> <br>
-					<div id="experience">
-						<input type="radio" name="exp" value=0 checked>0-5
-						<input type="radio" name="exp" value=1>5-10
-						<input type="radio" name="exp" value=2>10-15
-						<input type="radio" name="exp" value=3>15-20
-						<input type="radio" name="exp" value=4>20+
-					</div>
-					<input type="range" 														id="skillLvl" 		name="skillLvl" list="tickmarks" min=0 max =10 value=0>
-						<datalist id="tickmarks">
-							<option value=0>
-							<option value=1>
-							<option value=2>
-							<option value=3>
-							<option value=4>
-							<option value=5>
-							<option value=6>
-							<option value=7>
-							<option value=8>
-							<option value=9>
-							<option value=10>
-						</datalist>
-						
-					<div id="contacttype">
-						<input type="checkbox" name="emailProduct"> I would like to receive emails about new products and offers<br>
-						<input type="checkbox" name="emailAcc"> I would like to receive emails about my account and membership<br>
-						<input type="checkbox" name="mail"> I would like to receive mail<br>
-					</div>
-					
-					<input type="submit" value="Sign Up" id="submitMain">
-					<input type="reset">
-				</form>
-			</article>
 
-		</main>
-		
-		<!--
-		Here Ends Main
-		-->
-		
-		<footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css">
+	<title>Sign Up</title>
+</head>
+
+<body>
+	<header>
+		<div>
 			<figure>
-				<img src=image2.jpeg	>
+				<img src=image.jpeg>
 				<figcaption>
 					<p>Liu & Nemo Co. </p>
-					<p>Major Nemo, CEO </p>
+					<p>Joshua Liu, CEO </p>
 					<p>random@random.com </p>
 				</figcaption>
 			</figure>
-			<div id="copycontact">
-				<div id="footerleft"> <a href="page2.html">&copy; Copyright info here </a></div>
-				 <address> 
-					Contact us by email: <a href="mailto:random@random.com">random@random.com</a><br>
-					Contact us by phone: <a href="tel:1-123-456-7890">1-123-456-7890</a>				 
-				 </address>
+			<form action="https://google.com/search" method="get" id="searchBar">
+				<fieldset>
+					<input type="string" name="q" value="" id="searchString" placeholder="Search your stuff here">
+					<input type="submit" value="Submit" id="submit">
+					<div id="searchType">
+						<input type="radio" name="searchType" value="web" checked> Search the Web
+						<input type="radio" name="searchType" value="internal"> Search within the website</div>
+				</fieldset>
+			</form>
+		</div>
+		<h2>Welcome to the shittiest website in the world!</h2>
+
+		<nav>Links
+			<ul>
+				<li class="active nohover">Sign Up</li>
+				<li>
+					<a href=page1.html>Privacy Agreement</a>
+				</li>
+				<li>
+					<a href=page2.html>About You</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!--
+		Here Begins Main
+		-->
+	<main>
+		<article>
+			<h3> Sign up today to receive updates</h3>
+			<form action="#" method="post" id="mainform">
+				Name:
+				<input type="string" placeholder="First Name" id="firstName" name="firstName" autocomplete="on">
+				<input type="string" placeholder="Last Name" id="lastName" name="lastName" autocomplete="on">
+				<br> Email:
+				<input type="email" placeholder="name@domain.com" id="email" name="email">
+				<br> Password:
+				<input type="password" placeholder="Password" id="pwd" name="pswd1">
+				<br>
+				<input type="password" placeholder="Re-Enter Password" id="pwd2" name="pswdVerify">
+				<br> Birthday:
+				<input type="date" value="1998-01-01" id="bday" name="bday">
+				<br>
+				<input list="majors" placeholder="Major">
+				<datalist id="majors">
+					<option value="Civil Engineering">
+						<option value="Computer Engineering">
+							<option value="Computer Information Technology">
+								<option value="Computer Science">
+									<option value="Electrical Engineering">
+										<option value="Engineering Management">
+											<option value="Manufacturing Systems Engineering">
+												<option value="Mechanical Engineering">
+				</datalist>
+				<br> Your
+				<span class="change">favorite color</span>:
+				<input type="color" id="favColor">
+				<br> Years in Tertiary Education:
+				<select name="years">
+					<option value="1"> 1 Year</option>
+					<option value="2"> 2 Years</option>
+					<option value="3"> 3 Years</option>
+					<option value="4"> 4 Years</option>
+					<option value="5"> 5+ Years</option>
+				</select>
+				<br> Phone Number:
+				<input type="tel" placeholder="###-###-####" id="usrtel" name="usrtel">
+				<br> Personal Website:
+				<input type="url" placeholder="www.webname.com" id="website" name="website">
+				<br>
+				<div id="experience">
+					<input type="radio" name="exp" value=0 checked>0-5
+					<input type="radio" name="exp" value=1>5-10
+					<input type="radio" name="exp" value=2>10-15
+					<input type="radio" name="exp" value=3>15-20
+					<input type="radio" name="exp" value=4>20+
+				</div>
+				<input type="range" id="skillLvl" name="skillLvl" list="tickmarks" min=0 max=10 value=0>
+				<datalist id="tickmarks">
+					<option value=0>
+						<option value=1>
+							<option value=2>
+								<option value=3>
+									<option value=4>
+										<option value=5>
+											<option value=6>
+												<option value=7>
+													<option value=8>
+														<option value=9>
+															<option value=10>
+				</datalist>
+
+				<div id="contacttype">
+					<input type="checkbox" name="emailProduct"> I would like to receive emails about new products and offers
+					<br>
+					<input type="checkbox" name="emailAcc"> I would like to receive emails about my account and membership
+					<br>
+					<input type="checkbox" name="mail"> I would like to receive mail
+					<br>
+				</div>
+
+				<input type="submit" value="Sign Up" id="submitMain">
+				<input type="reset">
+			</form>
+		</article>
+
+	</main>
+
+	<!--
+		Here Ends Main
+		-->
+
+	<footer>
+		<figure>
+			<img src=image2.jpeg>
+			<figcaption>
+				<p>Liu & Nemo Co. </p>
+				<p>Ian "Nemo" Postel, CEO </p>
+				<p>random@random.com </p>
+			</figcaption>
+		</figure>
+		<div id="copycontact">
+			<div id="footerleft">
+				<a href="page2.html">&copy; Copyright info here </a>
 			</div>
-		</footer>
+			<address>
+				Contact us by email:
+				<a href="mailto:random@random.com">random@random.com</a>
+				<br> Contact us by phone:
+				<a href="tel:1-123-456-7890">1-123-456-7890</a>
+			</address>
+		</div>
+	</footer>
+
 	<body>
+
 </html>
