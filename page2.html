@@ -43,12 +43,15 @@
 			</nav>
 		</header>
 	
+		<!--
+		Main Begins Here
+		-->
 		
 		<main>
 			<article>
 				<details>
 					<summary>We sell the dankest memes in the world.</summary>
-					<p> Like the keyboard cat.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+					<p id="para1"> Like the keyboard cat.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  aaaaa 
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaa aaa asdfasdfasdf
 					aaaaaasdfwezxcvasdfhasdf asdfasdfasdf
@@ -57,7 +60,7 @@
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-					<p> Welcome to meme hell.
+					<p id="para2"> About The Creators<br>
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  aaaaa 
 					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaa aaa asdfasdfasdf
@@ -71,23 +74,46 @@
 			</article>
 			<section>
 				<h3> Contact Us </h3>
-				<address>1234 Random Ass Road<br> City of Random, CA 01234</address>
-				<tel>
+				<div id="flexContainer">
+					<figure><img src=image2.jpeg></figure>
+					<address>
+						<p>1234 Random Ass Road</p>
+						<p>City of Random, CA 01234</p>
+						<p>Contact us by phone:<a href="tel:1-123-456-7890">1-123-456-7890</a></p>
+						<p>or Email:<a href="mailto:random@random.com">random@random.com</a></p>
+					</address>
+				</div>
 			</section>
 		</main>
 		
-		<footer>
-			<figure>
-				<img src=image2.jpeg	>
-				<figcaption>
-					<p>Liu & Nemo Co. </p>
-					<p>Major Nemo, CEO </p>
-					<p>random@random.com </p>
-				</figcaption>
-			</figure>
-			
-			<div id="left"> <a href="#">&copy; Copyright info here </a></div>
-			<div id="right"> <p> </p> </div>
-		</footer>
-	<body>
+		<!--
+		Main Ends Here
+		-->
+		
+<footer>
+		<figure>
+			<img src=image2.jpeg>
+			<figcaption>
+				<p>Liu &amp; Nemo Co. </p>
+				<p>Ian "Nemo" Postel, CEO </p>
+				<p>random@random.com </p>
+			</figcaption>
+		</figure>
+		<div id="copycontact">
+			<div id="footerleft">
+				<a href="page2.html">&copy; Copyright info here </a>
+			</div>
+			<!--
+			<address>
+				Contact us by email:
+				<a href="mailto:random@random.com">random@random.com</a>
+				<br> Contact us by phone:
+				<a href="tel:1-123-456-7890">1-123-456-7890</a>
+			</address>
+			-->
+		</div>
+	</footer>
+
+</body>
+
 </html>

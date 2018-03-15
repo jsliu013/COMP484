@@ -2,14 +2,54 @@
 	background-color:yellow;
 }
 
-details p{
+main{
+	width:100%;
+}
+
+article{
+	width:100%;
+	text-align:center;
+}
+
+summary{
+	width:100%;		
+}
+
+#para1{
+	padding:2em;
+	margin:2em;
+	width:30%;
+	height:150px;
+	overflow:scroll;
+	display:inline-block;
+}
+
+#para2{
 	margin:2em;
 	width:30%;
 	height:150px;
 	overflow:hidden;
+	display:inline-block;
 }
 
-summary + p{
-	padding:2em;
-	overflow:scroll;
+section {
+	width:100%;
+	text-align:center;
 }
+
+section h3{
+	width:100%;	
+}
+
+section figure{
+	width:30%;
+	display: inline-block;
+	max-height:200px;
+	max-width:200px;
+}
+
+section address{
+	width: 30%;
+	display:inline-block;
+}
+
