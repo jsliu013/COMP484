@@ -1,0 +1,15 @@
+*:.not(.uncolored):hover{
+	background-color:yellow;
+}
+
+details p{
+	margin:2em;
+	width:30%;
+	height:150px;
+	overflow:hidden;
+}
+
+summary + p{
+	padding:2em;
+	overflow:scroll;
+}
