@@ -7,8 +7,7 @@ body{
 */
 header{
 	background: lightgray;
-	width:100%;	
-	max-height: 172px;
+	width:100%;
 }
 
 header figure{
@@ -41,8 +40,8 @@ header fieldset{
 	display:inline;
 	overflow:hidden;
 	border:0;
-	float:right; /* this does nothing? */
-	width:90%; /* this does nothing? */
+	float:right; 
+	width:90%;
 }
 
 #searchString{
@@ -70,6 +69,7 @@ nav{
 	text-align:center;
 	width:10em;
 	background-color:royalblue;
+	margin-left:1px;
 }
 
 nav ul{
@@ -77,15 +77,18 @@ nav ul{
 	list-style:none;
 	margin:0;
 	padding:0;
+	left:1px;
 }
 
 nav:hover ul{
 	display:block;
 	background-color:white;
+	position:absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 nav ul li {
-	border-top:2px solid royalblue;
+	border:2px solid royalblue;
 	background-color: white;
 	width:10em;
 	color:black;
