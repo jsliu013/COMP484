@@ -1,18 +1,22 @@
 @media all and (min-width:1025px) {
     article.privacyArt{
+        background-color:skyblue;
+    } 
+    article.privacyArt p{
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;
 
         -webkit-column-gap: 25px;
         -moz-column-gap: 25px;
-        column-gap: 25px;
-
-        background-color:skyblue;
-    }        
+        column-gap: 25px;  
+    }     
 }
 @media all and (min-width:481px) and (max-width:1024px) {
     article.privacyArt{
+        background-color:skyblue;
+    }        
+    article.privacyArt p{
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
@@ -20,13 +24,14 @@
         -webkit-column-gap: 30px;
         -moz-column-gap: 30px;
         column-gap: 30px;
-
-        background-color:skyblue;
-    }        
+    }
 }
 
 @media all and (max-width:480px) {
     article.privacyArt{
+        background-color:silver;
+    }     
+    article.privacyArt p{
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
@@ -34,9 +39,7 @@
         -webkit-column-gap: 20px;
         -moz-column-gap: 20px;
         column-gap: 20px;
-
-        background-color:silver;
-    }        
+    }   
 }
 
 @media all and (max-width:900px) and (min-width:700px){
@@ -46,15 +49,12 @@
     }
 }
 
-article.privacyArt{
+article{
     text-align:justify;
-}
-
-img.backg{
-    position:absolute;
-    z-index:100;
-    left:0;
-    bottom:0;
+    background-image:url("hat owl.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 section{
