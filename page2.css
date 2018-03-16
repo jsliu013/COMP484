@@ -1,4 +1,4 @@
-*:.not(.uncolored):hover{
+*:not(.uncolored):hover, *.colored:hover{
 	background-color:yellow;
 }
 
@@ -13,6 +13,10 @@ article{
 
 summary{
 	width:100%;		
+}
+
+details{
+	padding-top:30px;
 }
 
 #para1{
@@ -32,24 +36,31 @@ summary{
 	display:inline-block;
 }
 
-section {
+section,details {
 	width:100%;
 	text-align:center;
 }
 
-section h3{
+#ContactUs h3{
 	width:100%;	
 }
 
-section figure{
-	width:30%;
+#ContactUs figure{
+	width:100%;
 	display: inline-block;
+	margin:0;
+	padding-bottom: 50px;
+}
+#ContactUs figure img{
 	max-height:200px;
 	max-width:200px;
-}
-
-section address{
-	width: 30%;
 	display:inline-block;
 }
 
+#ContactUs figcaption{
+	position:relative;
+	top:-30px;
+	display:inline-block;
+	overflow:hidden;
+	margin-bottom:5px;
+}
