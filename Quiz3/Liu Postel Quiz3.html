@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Joshua Liu
+    Ian A.H. Postel
+    Comp 484 sec. 16659
+    Group Quiz #3
+    3/27/2018
+ -->
+
+<head>
+    <title>Liu Postel Quiz 3</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+
+        window.addEventListener("load", start, false);
+
+        var mbox;
+        var nbox;
+        var resbox;
+
+        function start() {
+            mbox = document.getElementById("valM");
+            nbox = document.getElementById("valN");
+            resbox = document.getElementById("results");
+            document.getElementById("submit").addEventListener("click", calculateA, false);
+        }
+
+        function calculateA() {
+            var m = parseInt(mbox.value);
+            var n = parseInt(nbox.value);
+
+            var results = A(m, n);
+
+            resbox.innerHTML = "<p> The result of A(" + m + "," + n + ") is: " + results + "</p>";
+        }
+
+        function A(m, n) {
+            //error checks
+            if (isNaN(m)) {
+                window.alert("Error: M is Not A Number!");
+                return NaN;
+            }
+            if (isNaN(n)) {
+                window.alert("Error: N is Not A Number!");
+                return NaN;
+            }
+            if (m < 0) {
+                window.alert("Error: M cannot be negative");
+                return NaN;
+            }
+            if (n < 0) {
+                window.alert("Error: N cannot be negative");
+                return NaN;
+            }
+            //real math
+            if (m == 0) {
+                return n + 1;
+            }
+            else if (n == 0) {
+                return A(m - 1, 1);
+            }
+            else {
+                return A(m - 1, A(m, n - 1));
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Calculating A(m,n)</h1>
+    <form action="#">
+        <p>
+            <label>Enter value for m:
+                <input id="valM" type=number />
+            </label>
+        </p>
+        <p>
+            <label>Enter value for n:
+                <input id="valN" type=number />
+            </label>
+        </p>
+        <input type="button" id="submit" value="Calculate" />
+    </form>
+    <div id="results"></div>
+</body>
+
+</html>
