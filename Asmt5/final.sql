@@ -4,6 +4,8 @@ CREATE DATABASE finaldb;
 
 USE finaldb;
 
+GRANT ALL PRIVILEGES ON *.* TO 'webphp'@'localhost' IDENTIFIED BY 'password';
+
 CREATE TABLE auth
 (
    userid int NOT NULL AUTO_INCREMENT PRIMARY KEY,

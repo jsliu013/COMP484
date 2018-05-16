@@ -18,7 +18,7 @@
 					<label for="password"> Password: </label>
 					<input type="password" id="password" name="password"><br>
 					
-					<input type="submit" value="Log In" name="login">
+					<input type="submit" value="Log In" name="login" id="submit">
 				</fieldset>
 			</form>
 		</div>
@@ -45,15 +45,26 @@
 					<input type="text" id="username" name="username"><br>
 					
 					<label for="password1"> Password: </label>
-					<input type="password" id="password1" name="password1"><br>
+					<input type="password" id="password1" name="password1" onkeyup="passMatch()"><br>
 					
 					<label for="password2"> Retype Password: </label>
-					<input type="password" id="password1" name="password1"><br>
-					<span id="nomatch"> </span>
+					<input type="password" id="password2" name="password2" onkeyup="passMatch()"><br>
+					<span id="nomatch"> </span><br>
 					
-					<input type="submit" value="Sign Up" name="signup">
+					<input type="submit" value="Sign Up" name="signup" id="submit">
 					</fieldset>
 			</form>
 		</div>
 	</body>
+	<script>
+	function passMatch(){
+		var pass1= document.getElementById('password1');
+		var pass2= document.getElementById('password2');
+		var issue= document.getElementById("nomatch");
+		
+		if(!(pass1.value == pass2.value))
+			issue.innerHTML="WARNING: passwords don't match!";
+		else 
+			issue.innerHTML="";
+}	</script>
 </html>
