@@ -36,8 +36,8 @@
 					<label for="phone"> Phone: </label>
 					<input type="tel" id="phone" name="phone"><br>
 					
-					<label for="e-mail"> Email: </label>
-					<input type="email" id="e-mail" name="e-mail"><br>
+					<label for="email"> Email: </label>
+					<input type="email" id="email" name="email"><br>
 					
 					<br>
 					
@@ -45,10 +45,10 @@
 					<input type="text" id="username" name="username"><br>
 					
 					<label for="password1"> Password: </label>
-					<input type="password" id="password1" name="password1" onkeyup="passMatch()"><br>
+					<input type="password" id="password1" name="password1"><br>
 					
 					<label for="password2"> Retype Password: </label>
-					<input type="password" id="password2" name="password2" onkeyup="passMatch()"><br>
+					<input type="password" id="password2" name="password2"><br>
 					<span id="nomatch"> </span><br>
 					
 					<input type="submit" value="Sign Up" name="signup" id="submit">
@@ -56,15 +56,5 @@
 			</form>
 		</div>
 	</body>
-	<script>
-	function passMatch(){
-		var pass1= document.getElementById('password1');
-		var pass2= document.getElementById('password2');
-		var issue= document.getElementById("nomatch");
-		
-		if(!(pass1.value == pass2.value))
-			issue.innerHTML="WARNING: passwords don't match!";
-		else 
-			issue.innerHTML="";
-}	</script>
+	<script src="home.js"></script>
 </html>
