@@ -15,24 +15,26 @@
 			$userid 	= $_POST['username'];
 			$password   = $_POST['password'];
 			
-			$conn = mysqli_connect($servername, $username, $pass);
+			$connect = mysqli_connect($servername, $username, $pass);
 			
-			if($connect->connect_error)
-				die("Database connection failed: ".$connect->connect_error);
+			if(!$connect)
+				die("Database connection failed: ".mysqli_connect_error());
 			mysqli_select_db($connect, $dbname) or die("Database $dbname does not exist.");
-			
-			$query = mysqli_query($connect, "select * from auth where username=$userid AND password = $password" 
-				or die(mysqli_error($connect);
+			$select = "select * from auth where username='$userid' AND password='$password'";
+			$query = mysqli_query($connect, $select) 
+				or die(mysqli_error($connect));
 			if( ($row=mysqli_num_rows($query)) > 0)
+			{
 				$row= mysqli_fetch_array($query);
 				echo "
 				<div>
 					<h3> Welcome back $userid! Login was successful. </h3>
-					<p> First Name: $row['firstName'] </p>
-					<p> Last Name : $row['lastName']  </p>
-					<p> email     : $row['email']     </p>
-					<p> phone &#35   : $row['phone']		</p>
+					<p> First Name: $row[firstName] </p>
+					<p> Last Name : $row[lastName]  </p>
+					<p> email     : $row[email]     </p>
+					<p> phone &#35   : $row[phone]		</p>
 				</div>";
+			}
 			else{
 				echo "
 				<div>
